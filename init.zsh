@@ -37,7 +37,6 @@ p6df::modules::gcp::external::brew() {
 ######################################################################
 p6df::modules::gcp::langs() {
 
-  pip install gsutil
   gcloud components install anthoscli beta
 }
 
