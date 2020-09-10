@@ -74,15 +74,30 @@ p6df::prompt::gcp::line() {
 ## XXX: move to p6gcp
 p6_gcp_prompt_info() {
 
-  # XXX: pick active one
-  local out=$(gcloud projects list | tail -1)
-  local project_id=$(p6_echo "$out" | awk '{print $1}')
-  local name=$(p6_echo "$out" | awk '{print $2}')
-  local project_number=$(p6_echo "$out" | awk '{print $3}')
+ local str
+ if p6_file_exists "$HOME/.config/gcloud/configurations/config_default"; then
+      local mtime=$(p6_dt_mtime "$HOME/.config/gcloud/configurations/config_default")
+      local now=$(p6_dt_now_epoch_seconds)
+      local diff=$(p6_math_sub "$now" "$mtime")
 
-  if ! p6_string_blank "$name"; then
-    p6_return_str "gcp:    $name ($project_id/$project_number)"
+      if ! p6_math_gt "$diff" "2700"; then
+          local account=$(awk -F= '/account/ { print $2 }' < $HOME/.config/gcloud/configurations/config_default | sed -e 's, *,,g')   
+          local project=$(awk -F= '/project/ { print $2 }' < $HOME/.config/gcloud/configurations/config_default | sed -e 's, *,,g')
+
+          local sts
+          if p6_math_gt "$diff" "2400"; then
+              sts=$(p6_color_ize "red" "black" "sts:\t$diff")
+          elif p6_math_gt "$diff" "2100"; then
+              sts=$(p6_color_ize "yellow" "black" "sts:\t$diff")
+          else
+              sts="sts:$diff"
+          fi
+
+          str="gcp:    _active:[$project - $account] [] () ($sts)"
+      fi
   fi
+
+  p6_return_str "$str"
 }
 
 # gcloud auth login
