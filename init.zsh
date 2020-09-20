@@ -93,7 +93,7 @@ p6_gcp_prompt_info() {
               sts="sts:$diff"
           fi
 
-          str="gcp:    _active:[$project - $account] [] () ($sts)"
+          str="gcp:      _active:[$project - $account] [] () ($sts)"
       fi
   fi
 
