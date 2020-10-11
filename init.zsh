@@ -15,7 +15,11 @@ p6df::modules::gcp::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::gcp::deps() { ModuleDeps=() }
+p6df::modules::gcp::deps() {
+  ModuleDeps=(
+    p6m7g8/p6common
+  )
+}
 
 ######################################################################
 #<
@@ -70,11 +74,11 @@ p6df::modules::gcp::init() {
 ######################################################################
 #<
 #
-# Function: p6df::prompt::gcp::line()
+# Function: p6df::modules::gcp::prompt::line()
 #
 #>
 ######################################################################
-p6df::prompt::gcp::line() {
+p6df::modules::gcp::prompt::line() {
 
   p6_gcp_prompt_info
 }
