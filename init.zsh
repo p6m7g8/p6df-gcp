@@ -22,7 +22,7 @@ p6df::modules::gcp::deps() {
 ######################################################################
 p6df::modules::gcp::external::brew() {
 
-  brew cask install google-cloud-sdk
+  brew install --cask google-cloud-sdk
 }
 
 ######################################################################
@@ -59,6 +59,7 @@ p6df::modules::gcp::home::symlink() {
 ######################################################################
 p6df::modules::gcp::init() {
 
+    export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
     source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
     source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 }
