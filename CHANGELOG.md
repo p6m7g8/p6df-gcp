@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6df-gcp/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **api:** centralize ::version() ([5381a4a](https://github.com/p6m7g8/p6df-gcp/commit/5381a4abce952355245f5b366b461c8084f9d3ed))
+* **community:** adds CODE_OF_CONDUCT ([3580436](https://github.com/p6m7g8/p6df-gcp/commit/3580436d54b5f692fa58fbfa10e3eb9da350c725))
+* **github:** adds ISSUE_TEMPLATEs ([9d310a8](https://github.com/p6m7g8/p6df-gcp/commit/9d310a8dc02f8329ade2897e74f5a994add326c3))
+
+
+### Bug Fixes
+
+* **langs:** add new CLOUDSDK_PYTHON env, cask -> --cask ([#15](https://github.com/p6m7g8/p6df-gcp/issues/15)) ([2ae4549](https://github.com/p6m7g8/p6df-gcp/commit/2ae454925e0215ad3687e3abf2da81179c377298))
+
+
+* **community:** rely on the .github/ in the org ([#13](https://github.com/p6m7g8/p6df-gcp/issues/13)) ([f283671](https://github.com/p6m7g8/p6df-gcp/commit/f28367183ea086c06189368f50e9fbe5e0f1a730))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#14](https://github.com/p6m7g8/p6df-gcp/issues/14)) ([0e890a6](https://github.com/p6m7g8/p6df-gcp/commit/0e890a64c41d0996b2f84f4c91d97016ba4ce340))
+* **README:** updates to template v2.0 ([1ca5e26](https://github.com/p6m7g8/p6df-gcp/commit/1ca5e2683bf4076543076910c026001adf179d53))
+* **semantic:** no longer needed, defaults are fine ([f97bd3f](https://github.com/p6m7g8/p6df-gcp/commit/f97bd3f591af4794f85638c9c5a3ff47e729df3f))
+
 ## [2.0.0](https://github.com/p6m7g8/p6df-gcp/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
