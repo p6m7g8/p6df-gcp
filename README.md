@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-gcp:
+
+#### p6df-gcp/init.zsh:
 
 - p6df::modules::gcp::deps()
 - p6df::modules::gcp::external::brew()
