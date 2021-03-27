@@ -46,8 +46,10 @@ p6df::modules::gcp::langs() {
 ######################################################################
 p6df::modules::gcp::home::symlink() {
 
-    ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gcloud .config/gcloud
-    ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gsutil .gsutil
+    echo ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gcloud .config/gcloud
+    echo ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gsutil .gsutil
+#    ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gcloud .config/gcloud
+#    ln -fs $P6_DFZ_SRC_DIR/$USER/home-private/gsutil .gsutil
 }
 
 ######################################################################
