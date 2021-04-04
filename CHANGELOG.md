@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-gcp/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+* **link:** remove rendundant symlinks; echo for now ([#17](https://github.com/p6m7g8/p6df-gcp/issues/17)) ([5962807](https://github.com/p6m7g8/p6df-gcp/commit/5962807cd103ce439027c68ae5860238d9bbc133))
+* **README:** updates generator ([#16](https://github.com/p6m7g8/p6df-gcp/issues/16)) ([e394d19](https://github.com/p6m7g8/p6df-gcp/commit/e394d196cd99b961f6a2fa1757984ec0af7ff0cd))
+* Coc -> .github ([920d5cd](https://github.com/p6m7g8/p6df-gcp/commit/920d5cdebaa2a42a5207bb740211c0014d14b3fb))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-gcp/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
